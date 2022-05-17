@@ -1,0 +1,55 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* 
+  grid-template-columns : grid 트랙의 크기 지정
+  transform : 요소의 위치를 x,y 방향만큼 이동
+*/
+.grid {
+  display: grid;
+  grid-template-columns: 350px 320px 200px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/*
+  flex-direction : 글이 아래로 내려감
+*/
+.left-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/*
+  justify-content : space-between 요소들 사이에 동일한 간격을 줌
+*/
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-board {
+  border: solid 2px;
+}
+
+.play-button {
+  background-color: #4caf50;
+  font-size: 16px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+#pause-btn {
+  display: none;
+}
+
+#sound-speaker{
+  font-size:30px;
+}
+
+.sound-item{
+  cursor:pointer;
+}
